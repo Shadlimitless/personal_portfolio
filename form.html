@@ -1,0 +1,55 @@
+<!DOCTYPE <html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+    <h1>Register</h1>
+    <form>
+        <label for="FirstName">First Name:</label>
+        <input type="text" name="fName" id="FirstName" placeholder="John" required>
+        <label for="LastName">Last Name:</label>
+        <input type="text" id="LastName" name="lName" placeholder="Smith" required>
+        <div>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Other </label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="password">Password:</label>
+            <input type="Password" id="password" name="password" required pattern=".{5,10}" title="5 to 10 characters">
+        </div>
+        <div>
+            <label for="date">Birthday:</label>
+            <select id="date" name="Date">
+                <option>Day</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <select id="month" name="Month">
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>March</option>
+            </select>
+            <select id="year" name="Year">
+                <option>Year</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+            </select>
+        </div>
+        <div>
+            <label for="agreement">I agree to the terms and conditions</label>
+            <input id ="agreement" type="checkbox">
+        </div>  
+        <input type="Submit">      
+    </form>
+    </body>
+</html>
